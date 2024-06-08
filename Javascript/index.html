@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script async src="script.js" defer></script>
-</head>
-<body>
-    
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="estilos/styles.css" />
+  </head>
+  <header class="header">
+    <img src="resources/Logo.jpg" alt="Logo de Empresa" />
+
+    <div class="header-texts">
+      <h2>Bienvenidos</h2>
+      <h1>PrestamoYa!</h1>
+      <p>
+        Una aplicacion para poder pedir la cotizacion de un prestamo de una
+        manera sencilla
+      </p>
+    </div>
+  </header>
+  <body>
+    <!-- inicio de sesion -->
+    <div class="container my-5" id="inicio-sesion">
+      <h2>Inicio de Sesion</h2>
+      <p id="mensaje-login" class="alert"></p>
+      <form id="login-form">
+        <div class="mb-3">
+          <label for="login-username" class="form-label">Usuario</label>
+          <input
+            type="text"
+            class="form-control"
+            id="login-username"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="login-password" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="login-password" />
+        </div>
+        <button id="login" type="submit" class="btn btn-primary">
+          Iniciar Sesion
+        </button>
+      </form>
+    </div>
+
+    <!-- registro -->
+    <div class="container my-5" id="register">
+      <h2>Registro</h2>
+      <p id="mensaje-register" class="alert"></p>
+      <form id="register-form">
+        <div class="mb-3">
+          <label for="register-email" class="form-label">Usuario</label>
+          <input
+            type="text"
+            class="form-control"
+            id="registro-email"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="register-password" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="registro-password" />
+        </div>
+        <button id="register" type="submit" class="btn btn-success">
+          Registrar
+        </button>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="Script.js"></script>
+  </body>
+  <footer>
+    <p>&copy Copiright Gabriel Marycz</p>
+  </footer>
 </html>
